@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5ae506d03fbfdc406ba8f8c1eebc8124 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5ae506d03fbfdc406ba8f8c1eebc8124" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5ae506d03fbfdc406ba8f8c1eebc8124 = L.map(
+                "map_5ae506d03fbfdc406ba8f8c1eebc8124",
+                {
+                    center: [-8.65, 116.45],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d541b2e302611bf613bb9f5ab67b6ea3 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "CartoDB",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d541b2e302611bf613bb9f5ab67b6ea3.addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            var circle_2e10a989754da1b08dd8b3412fa148d7 = L.circle(
+                [-8.884249, 116.461747],
+                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13000, "stroke": true, "weight": 1.5}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            circle_2e10a989754da1b08dd8b3412fa148d7.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD SINAR TANI<br>
+        <b>Sales Officer:</b> Arjuna<br>
+        <b>Sales Target (Liter):</b> 4,000<br>
+        <b>Coverage Area (km):</b> 13 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b894e9004937c062bd030d2b20a6671d = L.marker(
+                [-8.884249, 116.461747],
+                {
+}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            var icon_5219a20ff383b390f8c16024f1288578 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28cadb718ebf7ac3724feb3aeda29b48 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_642990ee7d19043c30c6c7e71b8c5178 = $(`<div id="html_642990ee7d19043c30c6c7e71b8c5178" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD SINAR TANI</h4>         <b>PIC:</b> Arjuna<br>         <b>Kecamatan:</b> Jerowaru<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 4,000 Liters<br>         <b>Revenue Target:</b> Rp 440000000<br>         <b>Coverage Radius:</b> 13 km     </div>     </div>`)[0];
+                popup_28cadb718ebf7ac3724feb3aeda29b48.setContent(html_642990ee7d19043c30c6c7e71b8c5178);
+            
+        
+
+        marker_b894e9004937c062bd030d2b20a6671d.bindPopup(popup_28cadb718ebf7ac3724feb3aeda29b48)
+        ;
+
+        
+    
+    
+            marker_b894e9004937c062bd030d2b20a6671d.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD SINAR TANI<br>
+        <b>Sales Officer:</b> Arjuna<br>
+        <b>Sales Target (Liter):</b> 4,000<br>
+        <b>Coverage Area (km):</b> 13 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b894e9004937c062bd030d2b20a6671d.setIcon(icon_5219a20ff383b390f8c16024f1288578);
+            
+    
+            var circle_131850fc9eb10f2a953cfd00ea2b1e4e = L.circle(
+                [-8.8274, 116.406746],
+                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22000, "stroke": true, "weight": 1.5}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            circle_131850fc9eb10f2a953cfd00ea2b1e4e.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> ARJUNA TANI<br>
+        <b>Sales Officer:</b> Arjuna<br>
+        <b>Sales Target (Liter):</b> 2,500<br>
+        <b>Coverage Area (km):</b> 22 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5be734c58d992f6f01333bb6ef5f6723 = L.marker(
+                [-8.8274, 116.406746],
+                {
+}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            var icon_33b7e7fcf7ca7dbfc7421dd8236b2d8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f30bf630e25a3f307479f5d88a1f6cc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0d27a542b1a90a7bed65d90ab5413636 = $(`<div id="html_0d27a542b1a90a7bed65d90ab5413636" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">ARJUNA TANI</h4>         <b>PIC:</b> Arjuna<br>         <b>Kecamatan:</b> Jerowaru<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,500 Liters<br>         <b>Revenue Target:</b> Rp 275000000<br>         <b>Coverage Radius:</b> 22 km     </div>     </div>`)[0];
+                popup_8f30bf630e25a3f307479f5d88a1f6cc.setContent(html_0d27a542b1a90a7bed65d90ab5413636);
+            
+        
+
+        marker_5be734c58d992f6f01333bb6ef5f6723.bindPopup(popup_8f30bf630e25a3f307479f5d88a1f6cc)
+        ;
+
+        
+    
+    
+            marker_5be734c58d992f6f01333bb6ef5f6723.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> ARJUNA TANI<br>
+        <b>Sales Officer:</b> Arjuna<br>
+        <b>Sales Target (Liter):</b> 2,500<br>
+        <b>Coverage Area (km):</b> 22 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5be734c58d992f6f01333bb6ef5f6723.setIcon(icon_33b7e7fcf7ca7dbfc7421dd8236b2d8f);
+            
+    
+            var circle_6568824d6f2907af1eb036c00d43bfbd = L.circle(
+                [-8.804466, 116.476303],
+                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15000, "stroke": true, "weight": 1.5}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            circle_6568824d6f2907af1eb036c00d43bfbd.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD. AL HARIS<br>
+        <b>Sales Officer:</b> Umam<br>
+        <b>Sales Target (Liter):</b> 2,500<br>
+        <b>Coverage Area (km):</b> 15 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6d7d5019cdfc9eb777dbf0a5f0311774 = L.marker(
+                [-8.804466, 116.476303],
+                {
+}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            var icon_db5caeb18bc3274e0d18645848a2ee8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3b84681372b72c5f7ce2ce6b5b48d2e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7f1dd6a95622088efe91c941424d348a = $(`<div id="html_7f1dd6a95622088efe91c941424d348a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD. AL HARIS</h4>         <b>PIC:</b> Umam<br>         <b>Kecamatan:</b> Jerowaru<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,500 Liters<br>         <b>Revenue Target:</b> Rp 275000000<br>         <b>Coverage Radius:</b> 15 km     </div>     </div>`)[0];
+                popup_d3b84681372b72c5f7ce2ce6b5b48d2e.setContent(html_7f1dd6a95622088efe91c941424d348a);
+            
+        
+
+        marker_6d7d5019cdfc9eb777dbf0a5f0311774.bindPopup(popup_d3b84681372b72c5f7ce2ce6b5b48d2e)
+        ;
+
+        
+    
+    
+            marker_6d7d5019cdfc9eb777dbf0a5f0311774.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD. AL HARIS<br>
+        <b>Sales Officer:</b> Umam<br>
+        <b>Sales Target (Liter):</b> 2,500<br>
+        <b>Coverage Area (km):</b> 15 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6d7d5019cdfc9eb777dbf0a5f0311774.setIcon(icon_db5caeb18bc3274e0d18645848a2ee8f);
+            
+    
+            var circle_002653314267d1732d9171597d40fcf6 = L.circle(
+                [-8.689354, 116.495621],
+                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16000, "stroke": true, "weight": 1.5}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            circle_002653314267d1732d9171597d40fcf6.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD. RIZKIA TANI<br>
+        <b>Sales Officer:</b> Arjuna<br>
+        <b>Sales Target (Liter):</b> 2,500<br>
+        <b>Coverage Area (km):</b> 16 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0fffaba61d39b0a5258848b3bd9febfd = L.marker(
+                [-8.689354, 116.495621],
+                {
+}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            var icon_98ee45c7ac312af0c681d4c31a567590 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f715186dac37badbbaf3d471019753ca = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5432dc61e6230af5848d31b336a4ad03 = $(`<div id="html_5432dc61e6230af5848d31b336a4ad03" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD. RIZKIA TANI</h4>         <b>PIC:</b> Arjuna<br>         <b>Kecamatan:</b> Sakra Timur<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,500 Liters<br>         <b>Revenue Target:</b> Rp 275000000<br>         <b>Coverage Radius:</b> 16 km     </div>     </div>`)[0];
+                popup_f715186dac37badbbaf3d471019753ca.setContent(html_5432dc61e6230af5848d31b336a4ad03);
+            
+        
+
+        marker_0fffaba61d39b0a5258848b3bd9febfd.bindPopup(popup_f715186dac37badbbaf3d471019753ca)
+        ;
+
+        
+    
+    
+            marker_0fffaba61d39b0a5258848b3bd9febfd.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD. RIZKIA TANI<br>
+        <b>Sales Officer:</b> Arjuna<br>
+        <b>Sales Target (Liter):</b> 2,500<br>
+        <b>Coverage Area (km):</b> 16 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0fffaba61d39b0a5258848b3bd9febfd.setIcon(icon_98ee45c7ac312af0c681d4c31a567590);
+            
+    
+            var circle_c1e5b96f887c9cda97d2bf681119c7f4 = L.circle(
+                [-8.764928, 116.364143],
+                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 1.5}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            circle_c1e5b96f887c9cda97d2bf681119c7f4.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD. BAROKAH TANI<br>
+        <b>Sales Officer:</b> Arjuna<br>
+        <b>Sales Target (Liter):</b> 1,000<br>
+        <b>Coverage Area (km):</b> 20 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9250eb3a24525059e0e2aeb68875fbf5 = L.marker(
+                [-8.764928, 116.364143],
+                {
+}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            var icon_d3322e3b2762d4d76328566c8cd139ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1416e59d81394f13d3756edf2cc8b755 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7bec44d080f7520596d9872aa16a67e6 = $(`<div id="html_7bec44d080f7520596d9872aa16a67e6" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD. BAROKAH TANI</h4>         <b>PIC:</b> Arjuna<br>         <b>Kecamatan:</b> Praya Timur<br>         <b>Kabupaten:</b> Lombok Tengah<br>         <b>Sales Target:</b> 1,000 Liters<br>         <b>Revenue Target:</b> Rp 110000000<br>         <b>Coverage Radius:</b> 20 km     </div>     </div>`)[0];
+                popup_1416e59d81394f13d3756edf2cc8b755.setContent(html_7bec44d080f7520596d9872aa16a67e6);
+            
+        
+
+        marker_9250eb3a24525059e0e2aeb68875fbf5.bindPopup(popup_1416e59d81394f13d3756edf2cc8b755)
+        ;
+
+        
+    
+    
+            marker_9250eb3a24525059e0e2aeb68875fbf5.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD. BAROKAH TANI<br>
+        <b>Sales Officer:</b> Arjuna<br>
+        <b>Sales Target (Liter):</b> 1,000<br>
+        <b>Coverage Area (km):</b> 20 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9250eb3a24525059e0e2aeb68875fbf5.setIcon(icon_d3322e3b2762d4d76328566c8cd139ac);
+            
+    
+            var circle_05f86fa6d2b5595cd286d7b4f6c99f28 = L.circle(
+                [-8.743425, 116.399826],
+                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21000, "stroke": true, "weight": 1.5}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            circle_05f86fa6d2b5595cd286d7b4f6c99f28.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD. BINA TANI UTAMA<br>
+        <b>Sales Officer:</b> Arjuna<br>
+        <b>Sales Target (Liter):</b> 2,500<br>
+        <b>Coverage Area (km):</b> 21 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_837808636a462081c76ae0dad756901a = L.marker(
+                [-8.743425, 116.399826],
+                {
+}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            var icon_da9d9bfc820d682e129e423e59ff04e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c13f9b7e6ea37b28075be54333d76e0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1c440556a60f8ce22a202b3909654312 = $(`<div id="html_1c440556a60f8ce22a202b3909654312" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD. BINA TANI UTAMA</h4>         <b>PIC:</b> Arjuna<br>         <b>Kecamatan:</b> Praya Timur<br>         <b>Kabupaten:</b> Lombok Tengah<br>         <b>Sales Target:</b> 2,500 Liters<br>         <b>Revenue Target:</b> Rp 275000000<br>         <b>Coverage Radius:</b> 21 km     </div>     </div>`)[0];
+                popup_3c13f9b7e6ea37b28075be54333d76e0.setContent(html_1c440556a60f8ce22a202b3909654312);
+            
+        
+
+        marker_837808636a462081c76ae0dad756901a.bindPopup(popup_3c13f9b7e6ea37b28075be54333d76e0)
+        ;
+
+        
+    
+    
+            marker_837808636a462081c76ae0dad756901a.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD. BINA TANI UTAMA<br>
+        <b>Sales Officer:</b> Arjuna<br>
+        <b>Sales Target (Liter):</b> 2,500<br>
+        <b>Coverage Area (km):</b> 21 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_837808636a462081c76ae0dad756901a.setIcon(icon_da9d9bfc820d682e129e423e59ff04e3);
+            
+    
+            var circle_9837243f0c0b039355765d60427a5698 = L.circle(
+                [-8.362045, 116.512912],
+                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21000, "stroke": true, "weight": 1.5}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            circle_9837243f0c0b039355765d60427a5698.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> Dirga Agro<br>
+        <b>Sales Officer:</b> Fikri<br>
+        <b>Sales Target (Liter):</b> 4,500<br>
+        <b>Coverage Area (km):</b> 21 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ec700a5f177b48f2da574780c256e901 = L.marker(
+                [-8.362045, 116.512912],
+                {
+}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            var icon_46f70fa718ca5230c5d55a52b3c406a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_823e96c62ec71eab346ed9488ade3367 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1d6f1e82de8cb2af66108b96a184561e = $(`<div id="html_1d6f1e82de8cb2af66108b96a184561e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">Dirga Agro</h4>         <b>PIC:</b> Fikri<br>         <b>Kecamatan:</b> Sembalun<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 4,500 Liters<br>         <b>Revenue Target:</b> Rp 495000000<br>         <b>Coverage Radius:</b> 21 km     </div>     </div>`)[0];
+                popup_823e96c62ec71eab346ed9488ade3367.setContent(html_1d6f1e82de8cb2af66108b96a184561e);
+            
+        
+
+        marker_ec700a5f177b48f2da574780c256e901.bindPopup(popup_823e96c62ec71eab346ed9488ade3367)
+        ;
+
+        
+    
+    
+            marker_ec700a5f177b48f2da574780c256e901.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> Dirga Agro<br>
+        <b>Sales Officer:</b> Fikri<br>
+        <b>Sales Target (Liter):</b> 4,500<br>
+        <b>Coverage Area (km):</b> 21 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ec700a5f177b48f2da574780c256e901.setIcon(icon_46f70fa718ca5230c5d55a52b3c406a6);
+            
+    
+            var circle_0445d48f80ba5dc9d4bd4b5c065f88c0 = L.circle(
+                [-8.795752, 116.29119],
+                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11000, "stroke": true, "weight": 1.5}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            circle_0445d48f80ba5dc9d4bd4b5c065f88c0.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD Bagus Rizki<br>
+        <b>Sales Officer:</b> Umam<br>
+        <b>Sales Target (Liter):</b> 2,000<br>
+        <b>Coverage Area (km):</b> 11 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_06ccf02357d18d36df63625246dc40c1 = L.marker(
+                [-8.795752, 116.29119],
+                {
+}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            var icon_9d85b493ba9064d35ce8644370343ea8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_428e8e502b8605a7d8e8af26206c12f4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3cf36dff00ae6146fab1f2b7c1a9badb = $(`<div id="html_3cf36dff00ae6146fab1f2b7c1a9badb" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Bagus Rizki</h4>         <b>PIC:</b> Umam<br>         <b>Kecamatan:</b> Pujut<br>         <b>Kabupaten:</b> Lombok Tengah<br>         <b>Sales Target:</b> 2,000 Liters<br>         <b>Revenue Target:</b> Rp 220000000<br>         <b>Coverage Radius:</b> 11 km     </div>     </div>`)[0];
+                popup_428e8e502b8605a7d8e8af26206c12f4.setContent(html_3cf36dff00ae6146fab1f2b7c1a9badb);
+            
+        
+
+        marker_06ccf02357d18d36df63625246dc40c1.bindPopup(popup_428e8e502b8605a7d8e8af26206c12f4)
+        ;
+
+        
+    
+    
+            marker_06ccf02357d18d36df63625246dc40c1.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD Bagus Rizki<br>
+        <b>Sales Officer:</b> Umam<br>
+        <b>Sales Target (Liter):</b> 2,000<br>
+        <b>Coverage Area (km):</b> 11 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_06ccf02357d18d36df63625246dc40c1.setIcon(icon_9d85b493ba9064d35ce8644370343ea8);
+            
+    
+            var circle_87c0830b50013156b260b49940895670 = L.circle(
+                [-8.386196, 116.698815],
+                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19000, "stroke": true, "weight": 1.5}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            circle_87c0830b50013156b260b49940895670.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD Bale Tani<br>
+        <b>Sales Officer:</b> Umam<br>
+        <b>Sales Target (Liter):</b> 2,500<br>
+        <b>Coverage Area (km):</b> 19 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_52b01a10afd707a199aa6af7da02bf5e = L.marker(
+                [-8.386196, 116.698815],
+                {
+}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            var icon_bff6de910124623bc1ba10c8a9b289be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c121b45bf8c21330bcb9ff4391f4f044 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_68e1ee7eb6ae073cf8fd792486a4719b = $(`<div id="html_68e1ee7eb6ae073cf8fd792486a4719b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Bale Tani</h4>         <b>PIC:</b> Umam<br>         <b>Kecamatan:</b> Sembelia<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,500 Liters<br>         <b>Revenue Target:</b> Rp 275000000<br>         <b>Coverage Radius:</b> 19 km     </div>     </div>`)[0];
+                popup_c121b45bf8c21330bcb9ff4391f4f044.setContent(html_68e1ee7eb6ae073cf8fd792486a4719b);
+            
+        
+
+        marker_52b01a10afd707a199aa6af7da02bf5e.bindPopup(popup_c121b45bf8c21330bcb9ff4391f4f044)
+        ;
+
+        
+    
+    
+            marker_52b01a10afd707a199aa6af7da02bf5e.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD Bale Tani<br>
+        <b>Sales Officer:</b> Umam<br>
+        <b>Sales Target (Liter):</b> 2,500<br>
+        <b>Coverage Area (km):</b> 19 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_52b01a10afd707a199aa6af7da02bf5e.setIcon(icon_bff6de910124623bc1ba10c8a9b289be);
+            
+    
+            var circle_233ca05e6a62931b92de69ec98fed790 = L.circle(
+                [-8.614809, 116.598076],
+                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14000, "stroke": true, "weight": 1.5}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            circle_233ca05e6a62931b92de69ec98fed790.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD Taninte<br>
+        <b>Sales Officer:</b> Fikri<br>
+        <b>Sales Target (Liter):</b> 2,000<br>
+        <b>Coverage Area (km):</b> 14 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d3c322f985fd815aa0c1e3cd436da2e5 = L.marker(
+                [-8.614809, 116.598076],
+                {
+}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            var icon_5b7839b1ef646553de70186d1ab3743c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e0c83eb76b1adb013c0bbebcb4d795f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7c3446cc896570586699c131d23d6e4c = $(`<div id="html_7c3446cc896570586699c131d23d6e4c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Taninte</h4>         <b>PIC:</b> Fikri<br>         <b>Kecamatan:</b> Labuhan Haji<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,000 Liters<br>         <b>Revenue Target:</b> Rp 220000000<br>         <b>Coverage Radius:</b> 14 km     </div>     </div>`)[0];
+                popup_6e0c83eb76b1adb013c0bbebcb4d795f.setContent(html_7c3446cc896570586699c131d23d6e4c);
+            
+        
+
+        marker_d3c322f985fd815aa0c1e3cd436da2e5.bindPopup(popup_6e0c83eb76b1adb013c0bbebcb4d795f)
+        ;
+
+        
+    
+    
+            marker_d3c322f985fd815aa0c1e3cd436da2e5.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD Taninte<br>
+        <b>Sales Officer:</b> Fikri<br>
+        <b>Sales Target (Liter):</b> 2,000<br>
+        <b>Coverage Area (km):</b> 14 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d3c322f985fd815aa0c1e3cd436da2e5.setIcon(icon_5b7839b1ef646553de70186d1ab3743c);
+            
+    
+            var circle_66c7ea394336a3f507009a853ad7afcb = L.circle(
+                [-8.557584, 116.631546],
+                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13000, "stroke": true, "weight": 1.5}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            circle_66c7ea394336a3f507009a853ad7afcb.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD Maju Jaya<br>
+        <b>Sales Officer:</b> Fikri<br>
+        <b>Sales Target (Liter):</b> 2,000<br>
+        <b>Coverage Area (km):</b> 13 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e6b4a854b177ea48daaf7e632dc6cfd6 = L.marker(
+                [-8.557584, 116.631546],
+                {
+}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            var icon_f3003e9a7cfcbb53446186a5a255f742 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8ec5e271794a4c919297496aba68811 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3b99d6748a53fed8e6dea62559fee801 = $(`<div id="html_3b99d6748a53fed8e6dea62559fee801" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Maju Jaya</h4>         <b>PIC:</b> Fikri<br>         <b>Kecamatan:</b> Pringgabaya<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,000 Liters<br>         <b>Revenue Target:</b> Rp 220000000<br>         <b>Coverage Radius:</b> 13 km     </div>     </div>`)[0];
+                popup_d8ec5e271794a4c919297496aba68811.setContent(html_3b99d6748a53fed8e6dea62559fee801);
+            
+        
+
+        marker_e6b4a854b177ea48daaf7e632dc6cfd6.bindPopup(popup_d8ec5e271794a4c919297496aba68811)
+        ;
+
+        
+    
+    
+            marker_e6b4a854b177ea48daaf7e632dc6cfd6.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD Maju Jaya<br>
+        <b>Sales Officer:</b> Fikri<br>
+        <b>Sales Target (Liter):</b> 2,000<br>
+        <b>Coverage Area (km):</b> 13 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e6b4a854b177ea48daaf7e632dc6cfd6.setIcon(icon_f3003e9a7cfcbb53446186a5a255f742);
+            
+    
+            var circle_0fa5a82a6c4a492c36f7de30d3efe819 = L.circle(
+                [-8.778427, 116.309967],
+                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21000, "stroke": true, "weight": 1.5}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            circle_0fa5a82a6c4a492c36f7de30d3efe819.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD Riski Tani<br>
+        <b>Sales Officer:</b> Umam<br>
+        <b>Sales Target (Liter):</b> 1,500<br>
+        <b>Coverage Area (km):</b> 21 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_082cbc8dd3a3320166843ffb2777445f = L.marker(
+                [-8.778427, 116.309967],
+                {
+}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            var icon_e3474bd6eb73ddd645ad72b1b0a85648 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46b709c17089eb2a2ec8e733ab00ee21 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_84d23e1880bbd4c302440ece413773fb = $(`<div id="html_84d23e1880bbd4c302440ece413773fb" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Riski Tani</h4>         <b>PIC:</b> Umam<br>         <b>Kecamatan:</b> Pujut<br>         <b>Kabupaten:</b> Lombok Tengah<br>         <b>Sales Target:</b> 1,500 Liters<br>         <b>Revenue Target:</b> Rp 165000000<br>         <b>Coverage Radius:</b> 21 km     </div>     </div>`)[0];
+                popup_46b709c17089eb2a2ec8e733ab00ee21.setContent(html_84d23e1880bbd4c302440ece413773fb);
+            
+        
+
+        marker_082cbc8dd3a3320166843ffb2777445f.bindPopup(popup_46b709c17089eb2a2ec8e733ab00ee21)
+        ;
+
+        
+    
+    
+            marker_082cbc8dd3a3320166843ffb2777445f.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD Riski Tani<br>
+        <b>Sales Officer:</b> Umam<br>
+        <b>Sales Target (Liter):</b> 1,500<br>
+        <b>Coverage Area (km):</b> 21 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_082cbc8dd3a3320166843ffb2777445f.setIcon(icon_e3474bd6eb73ddd645ad72b1b0a85648);
+            
+    
+            var circle_58027606d69d380fe962e7bddab23187 = L.circle(
+                [-8.603066, 116.51783],
+                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23000, "stroke": true, "weight": 1.5}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            circle_58027606d69d380fe962e7bddab23187.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD Algiva Yani<br>
+        <b>Sales Officer:</b> Fikri<br>
+        <b>Sales Target (Liter):</b> 2,000<br>
+        <b>Coverage Area (km):</b> 23 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ef6df8e354e3aebe48f20b2b3eb04bab = L.marker(
+                [-8.603066, 116.51783],
+                {
+}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            var icon_d091145ac2db0f251b5547607e88d22e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_209f2fc483a1f0066acd845a7209c42d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7fbf0e19166983214950c0d91b694b9e = $(`<div id="html_7fbf0e19166983214950c0d91b694b9e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Algiva Yani</h4>         <b>PIC:</b> Fikri<br>         <b>Kecamatan:</b> Suralaga<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,000 Liters<br>         <b>Revenue Target:</b> Rp 220000000<br>         <b>Coverage Radius:</b> 23 km     </div>     </div>`)[0];
+                popup_209f2fc483a1f0066acd845a7209c42d.setContent(html_7fbf0e19166983214950c0d91b694b9e);
+            
+        
+
+        marker_ef6df8e354e3aebe48f20b2b3eb04bab.bindPopup(popup_209f2fc483a1f0066acd845a7209c42d)
+        ;
+
+        
+    
+    
+            marker_ef6df8e354e3aebe48f20b2b3eb04bab.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD Algiva Yani<br>
+        <b>Sales Officer:</b> Fikri<br>
+        <b>Sales Target (Liter):</b> 2,000<br>
+        <b>Coverage Area (km):</b> 23 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ef6df8e354e3aebe48f20b2b3eb04bab.setIcon(icon_d091145ac2db0f251b5547607e88d22e);
+            
+    
+            var circle_b6c2c71bdaa8d73ca9e1184abea352cc = L.circle(
+                [-8.56852, 116.531115],
+                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15000, "stroke": true, "weight": 1.5}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            circle_b6c2c71bdaa8d73ca9e1184abea352cc.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> Sarana Tani<br>
+        <b>Sales Officer:</b> Fikri<br>
+        <b>Sales Target (Liter):</b> 1,500<br>
+        <b>Coverage Area (km):</b> 15 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4f1b70a3a3d24e342e89c1e8dcf54b37 = L.marker(
+                [-8.56852, 116.531115],
+                {
+}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            var icon_99b849f1e9e935a29ed089c444abdf23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af37b898724695df0d3c895b29f9719d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ba74868fdc95557423f882a3d0896142 = $(`<div id="html_ba74868fdc95557423f882a3d0896142" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">Sarana Tani</h4>         <b>PIC:</b> Fikri<br>         <b>Kecamatan:</b> Aikmel<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 1,500 Liters<br>         <b>Revenue Target:</b> Rp 165000000<br>         <b>Coverage Radius:</b> 15 km     </div>     </div>`)[0];
+                popup_af37b898724695df0d3c895b29f9719d.setContent(html_ba74868fdc95557423f882a3d0896142);
+            
+        
+
+        marker_4f1b70a3a3d24e342e89c1e8dcf54b37.bindPopup(popup_af37b898724695df0d3c895b29f9719d)
+        ;
+
+        
+    
+    
+            marker_4f1b70a3a3d24e342e89c1e8dcf54b37.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> Sarana Tani<br>
+        <b>Sales Officer:</b> Fikri<br>
+        <b>Sales Target (Liter):</b> 1,500<br>
+        <b>Coverage Area (km):</b> 15 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4f1b70a3a3d24e342e89c1e8dcf54b37.setIcon(icon_99b849f1e9e935a29ed089c444abdf23);
+            
+    
+            var circle_85174a3e2cdd140a2fad37cfabc25e09 = L.circle(
+                [-8.640409, 116.105889],
+                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16000, "stroke": true, "weight": 1.5}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            circle_85174a3e2cdd140a2fad37cfabc25e09.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD Berkah Insani<br>
+        <b>Sales Officer:</b> Fikri<br>
+        <b>Sales Target (Liter):</b> 1,000<br>
+        <b>Coverage Area (km):</b> 16 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e30119f020455018f94ecfea0401ba78 = L.marker(
+                [-8.640409, 116.105889],
+                {
+}
+            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+        
+    
+            var icon_c7da73cd906d92d456ff23cdda4af6f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_74893678388273cba7cdffd97317947b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_339df8bf5f843c8cc9070f68f4276cd3 = $(`<div id="html_339df8bf5f843c8cc9070f68f4276cd3" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Berkah Insani</h4>         <b>PIC:</b> Fikri<br>         <b>Kecamatan:</b> Labuapi<br>         <b>Kabupaten:</b> Lombok Barat<br>         <b>Sales Target:</b> 1,000 Liters<br>         <b>Revenue Target:</b> Rp 110000000<br>         <b>Coverage Radius:</b> 16 km     </div>     </div>`)[0];
+                popup_74893678388273cba7cdffd97317947b.setContent(html_339df8bf5f843c8cc9070f68f4276cd3);
+            
+        
+
+        marker_e30119f020455018f94ecfea0401ba78.bindPopup(popup_74893678388273cba7cdffd97317947b)
+        ;
+
+        
+    
+    
+            marker_e30119f020455018f94ecfea0401ba78.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
+        <b>Shop Name:</b> UD Berkah Insani<br>
+        <b>Sales Officer:</b> Fikri<br>
+        <b>Sales Target (Liter):</b> 1,000<br>
+        <b>Coverage Area (km):</b> 16 km
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e30119f020455018f94ecfea0401ba78.setIcon(icon_c7da73cd906d92d456ff23cdda4af6f7);
+            
+</script>
+</html>
