@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_5ae506d03fbfdc406ba8f8c1eebc8124 {
+                #map_4d0e2fed5a7ad7c3b4518877d3ec0c7c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,14 +54,39 @@
 <body>
     
     
-            <div class="folium-map" id="map_5ae506d03fbfdc406ba8f8c1eebc8124" ></div>
+            <div class="folium-map" id="map_4d0e2fed5a7ad7c3b4518877d3ec0c7c" ></div>
         
+    
+<div style="
+    position: fixed; 
+    bottom: 20px; left: 20px; width: auto; height: auto;
+    background-color: white; border-radius: 6px; padding: 10px 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15); z-index:9999;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+    font-size: 12px; color: #333;
+">
+    <div style="font-weight: 600; margin-bottom: 6px; color: #111;">Sales Officer</div>
+    <div style="display: flex; gap: 12px; align-items: center;">
+        <div style="display: flex; align-items: center; gap: 6px;">
+            <span style="height: 12px; width: 12px; background-color: #6495ED; border-radius: 50%; display: inline-block;"></span>
+            <span>Fikri</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 6px;">
+            <span style="height: 12px; width: 12px; background-color: #FFA07A; border-radius: 50%; display: inline-block;"></span>
+            <span>Arjuna</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 6px;">
+            <span style="height: 12px; width: 12px; background-color: #BA55D3; border-radius: 50%; display: inline-block;"></span>
+            <span>Umam</span>
+        </div>
+    </div>
+</div>
 </body>
 <script>
     
     
-            var map_5ae506d03fbfdc406ba8f8c1eebc8124 = L.map(
-                "map_5ae506d03fbfdc406ba8f8c1eebc8124",
+            var map_4d0e2fed5a7ad7c3b4518877d3ec0c7c = L.map(
+                "map_4d0e2fed5a7ad7c3b4518877d3ec0c7c",
                 {
                     center: [-8.65, 116.45],
                     crs: L.CRS.EPSG3857,
@@ -78,7 +103,7 @@
 
         
     
-            var tile_layer_d541b2e302611bf613bb9f5ab67b6ea3 = L.tileLayer(
+            var tile_layer_bdecf143f0cc47eab3f6592a2b7fee26 = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {
   "minZoom": 0,
@@ -95,16 +120,16 @@
             );
         
     
-            tile_layer_d541b2e302611bf613bb9f5ab67b6ea3.addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+            tile_layer_bdecf143f0cc47eab3f6592a2b7fee26.addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            var circle_2e10a989754da1b08dd8b3412fa148d7 = L.circle(
+            var circle_32ec5f1e38a83771ff31c7e15546bb5e = L.circle(
                 [-8.884249, 116.461747],
-                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13000, "stroke": true, "weight": 1.5}
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+                {"bubblingMouseEvents": true, "color": "#FFA07A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFA07A", "fillOpacity": 0.18, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13000.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            circle_2e10a989754da1b08dd8b3412fa148d7.bindTooltip(
+            circle_32ec5f1e38a83771ff31c7e15546bb5e.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -121,16 +146,16 @@
             );
         
     
-            var marker_b894e9004937c062bd030d2b20a6671d = L.marker(
+            var marker_fcdfa4fef7e4cf66a4486ed53c5df692 = L.marker(
                 [-8.884249, 116.461747],
                 {
 }
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            var icon_5219a20ff383b390f8c16024f1288578 = L.AwesomeMarkers.icon(
+            var icon_87ed6c6d595862114fbdb0c1f0ef68bc = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "orange",
   "iconColor": "white",
   "icon": "shopping-cart",
   "prefix": "fa",
@@ -139,24 +164,24 @@
             );
         
     
-        var popup_28cadb718ebf7ac3724feb3aeda29b48 = L.popup({
+        var popup_a45db494ec28d74f4464b2ede84775cd = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_642990ee7d19043c30c6c7e71b8c5178 = $(`<div id="html_642990ee7d19043c30c6c7e71b8c5178" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD SINAR TANI</h4>         <b>PIC:</b> Arjuna<br>         <b>Kecamatan:</b> Jerowaru<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 4,000 Liters<br>         <b>Revenue Target:</b> Rp 440000000<br>         <b>Coverage Radius:</b> 13 km     </div>     </div>`)[0];
-                popup_28cadb718ebf7ac3724feb3aeda29b48.setContent(html_642990ee7d19043c30c6c7e71b8c5178);
+                var html_8c5daa2d7cd12f53f99b41fb0f69e671 = $(`<div id="html_8c5daa2d7cd12f53f99b41fb0f69e671" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD SINAR TANI</h4>         <b>PIC:</b> Arjuna<br>         <b>Kecamatan:</b> Jerowaru<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 4,000 Liters<br>         <b>Revenue Target:</b> Rp 440000000<br>         <b>Coverage Radius:</b> 13 km     </div>     </div>`)[0];
+                popup_a45db494ec28d74f4464b2ede84775cd.setContent(html_8c5daa2d7cd12f53f99b41fb0f69e671);
             
         
 
-        marker_b894e9004937c062bd030d2b20a6671d.bindPopup(popup_28cadb718ebf7ac3724feb3aeda29b48)
+        marker_fcdfa4fef7e4cf66a4486ed53c5df692.bindPopup(popup_a45db494ec28d74f4464b2ede84775cd)
         ;
 
         
     
     
-            marker_b894e9004937c062bd030d2b20a6671d.bindTooltip(
+            marker_fcdfa4fef7e4cf66a4486ed53c5df692.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -173,16 +198,16 @@
             );
         
     
-                marker_b894e9004937c062bd030d2b20a6671d.setIcon(icon_5219a20ff383b390f8c16024f1288578);
+                marker_fcdfa4fef7e4cf66a4486ed53c5df692.setIcon(icon_87ed6c6d595862114fbdb0c1f0ef68bc);
             
     
-            var circle_131850fc9eb10f2a953cfd00ea2b1e4e = L.circle(
+            var circle_803c2717b5e5235918d70115bc366342 = L.circle(
                 [-8.8274, 116.406746],
-                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22000, "stroke": true, "weight": 1.5}
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+                {"bubblingMouseEvents": true, "color": "#FFA07A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFA07A", "fillOpacity": 0.18, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22000.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            circle_131850fc9eb10f2a953cfd00ea2b1e4e.bindTooltip(
+            circle_803c2717b5e5235918d70115bc366342.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -199,16 +224,16 @@
             );
         
     
-            var marker_5be734c58d992f6f01333bb6ef5f6723 = L.marker(
+            var marker_da6263b9e98ce86daaae785bbc8a4bf3 = L.marker(
                 [-8.8274, 116.406746],
                 {
 }
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            var icon_33b7e7fcf7ca7dbfc7421dd8236b2d8f = L.AwesomeMarkers.icon(
+            var icon_6eb7a4f80bc1810871fbe2c2f6ed1a74 = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "orange",
   "iconColor": "white",
   "icon": "shopping-cart",
   "prefix": "fa",
@@ -217,24 +242,24 @@
             );
         
     
-        var popup_8f30bf630e25a3f307479f5d88a1f6cc = L.popup({
+        var popup_253fa1666b3dfb4fcfbf18b15626bfc7 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_0d27a542b1a90a7bed65d90ab5413636 = $(`<div id="html_0d27a542b1a90a7bed65d90ab5413636" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">ARJUNA TANI</h4>         <b>PIC:</b> Arjuna<br>         <b>Kecamatan:</b> Jerowaru<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,500 Liters<br>         <b>Revenue Target:</b> Rp 275000000<br>         <b>Coverage Radius:</b> 22 km     </div>     </div>`)[0];
-                popup_8f30bf630e25a3f307479f5d88a1f6cc.setContent(html_0d27a542b1a90a7bed65d90ab5413636);
+                var html_c09682df74ed360574e46840377dc9dd = $(`<div id="html_c09682df74ed360574e46840377dc9dd" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">ARJUNA TANI</h4>         <b>PIC:</b> Arjuna<br>         <b>Kecamatan:</b> Jerowaru<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,500 Liters<br>         <b>Revenue Target:</b> Rp 275000000<br>         <b>Coverage Radius:</b> 22 km     </div>     </div>`)[0];
+                popup_253fa1666b3dfb4fcfbf18b15626bfc7.setContent(html_c09682df74ed360574e46840377dc9dd);
             
         
 
-        marker_5be734c58d992f6f01333bb6ef5f6723.bindPopup(popup_8f30bf630e25a3f307479f5d88a1f6cc)
+        marker_da6263b9e98ce86daaae785bbc8a4bf3.bindPopup(popup_253fa1666b3dfb4fcfbf18b15626bfc7)
         ;
 
         
     
     
-            marker_5be734c58d992f6f01333bb6ef5f6723.bindTooltip(
+            marker_da6263b9e98ce86daaae785bbc8a4bf3.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -251,16 +276,16 @@
             );
         
     
-                marker_5be734c58d992f6f01333bb6ef5f6723.setIcon(icon_33b7e7fcf7ca7dbfc7421dd8236b2d8f);
+                marker_da6263b9e98ce86daaae785bbc8a4bf3.setIcon(icon_6eb7a4f80bc1810871fbe2c2f6ed1a74);
             
     
-            var circle_6568824d6f2907af1eb036c00d43bfbd = L.circle(
+            var circle_c9baffac4f57a77ae239c0fee28b208a = L.circle(
                 [-8.804466, 116.476303],
-                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15000, "stroke": true, "weight": 1.5}
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+                {"bubblingMouseEvents": true, "color": "#BA55D3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BA55D3", "fillOpacity": 0.18, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15000.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            circle_6568824d6f2907af1eb036c00d43bfbd.bindTooltip(
+            circle_c9baffac4f57a77ae239c0fee28b208a.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -277,16 +302,16 @@
             );
         
     
-            var marker_6d7d5019cdfc9eb777dbf0a5f0311774 = L.marker(
+            var marker_233d1413186748f0977ad1c80624ce43 = L.marker(
                 [-8.804466, 116.476303],
                 {
 }
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            var icon_db5caeb18bc3274e0d18645848a2ee8f = L.AwesomeMarkers.icon(
+            var icon_129c974cdd2cf4f8ad83d4e7d40fece4 = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "purple",
   "iconColor": "white",
   "icon": "shopping-cart",
   "prefix": "fa",
@@ -295,24 +320,24 @@
             );
         
     
-        var popup_d3b84681372b72c5f7ce2ce6b5b48d2e = L.popup({
+        var popup_e746a83656c4bdf6425b3bff86ca3937 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_7f1dd6a95622088efe91c941424d348a = $(`<div id="html_7f1dd6a95622088efe91c941424d348a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD. AL HARIS</h4>         <b>PIC:</b> Umam<br>         <b>Kecamatan:</b> Jerowaru<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,500 Liters<br>         <b>Revenue Target:</b> Rp 275000000<br>         <b>Coverage Radius:</b> 15 km     </div>     </div>`)[0];
-                popup_d3b84681372b72c5f7ce2ce6b5b48d2e.setContent(html_7f1dd6a95622088efe91c941424d348a);
+                var html_519c77af28d7423a20360837335747e4 = $(`<div id="html_519c77af28d7423a20360837335747e4" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD. AL HARIS</h4>         <b>PIC:</b> Umam<br>         <b>Kecamatan:</b> Jerowaru<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,500 Liters<br>         <b>Revenue Target:</b> Rp 275000000<br>         <b>Coverage Radius:</b> 15 km     </div>     </div>`)[0];
+                popup_e746a83656c4bdf6425b3bff86ca3937.setContent(html_519c77af28d7423a20360837335747e4);
             
         
 
-        marker_6d7d5019cdfc9eb777dbf0a5f0311774.bindPopup(popup_d3b84681372b72c5f7ce2ce6b5b48d2e)
+        marker_233d1413186748f0977ad1c80624ce43.bindPopup(popup_e746a83656c4bdf6425b3bff86ca3937)
         ;
 
         
     
     
-            marker_6d7d5019cdfc9eb777dbf0a5f0311774.bindTooltip(
+            marker_233d1413186748f0977ad1c80624ce43.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -329,16 +354,16 @@
             );
         
     
-                marker_6d7d5019cdfc9eb777dbf0a5f0311774.setIcon(icon_db5caeb18bc3274e0d18645848a2ee8f);
+                marker_233d1413186748f0977ad1c80624ce43.setIcon(icon_129c974cdd2cf4f8ad83d4e7d40fece4);
             
     
-            var circle_002653314267d1732d9171597d40fcf6 = L.circle(
+            var circle_b74e8629fafb571f2b0ea6cc8c59d236 = L.circle(
                 [-8.689354, 116.495621],
-                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16000, "stroke": true, "weight": 1.5}
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+                {"bubblingMouseEvents": true, "color": "#FFA07A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFA07A", "fillOpacity": 0.18, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16000.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            circle_002653314267d1732d9171597d40fcf6.bindTooltip(
+            circle_b74e8629fafb571f2b0ea6cc8c59d236.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -355,16 +380,16 @@
             );
         
     
-            var marker_0fffaba61d39b0a5258848b3bd9febfd = L.marker(
+            var marker_9be81fc3b7d159a7b6fb7618ea782f88 = L.marker(
                 [-8.689354, 116.495621],
                 {
 }
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            var icon_98ee45c7ac312af0c681d4c31a567590 = L.AwesomeMarkers.icon(
+            var icon_740baeca96d7c5f991a125853946ff64 = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "orange",
   "iconColor": "white",
   "icon": "shopping-cart",
   "prefix": "fa",
@@ -373,24 +398,24 @@
             );
         
     
-        var popup_f715186dac37badbbaf3d471019753ca = L.popup({
+        var popup_261baebb2ea9096f3a77d5fc6d9e7b93 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_5432dc61e6230af5848d31b336a4ad03 = $(`<div id="html_5432dc61e6230af5848d31b336a4ad03" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD. RIZKIA TANI</h4>         <b>PIC:</b> Arjuna<br>         <b>Kecamatan:</b> Sakra Timur<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,500 Liters<br>         <b>Revenue Target:</b> Rp 275000000<br>         <b>Coverage Radius:</b> 16 km     </div>     </div>`)[0];
-                popup_f715186dac37badbbaf3d471019753ca.setContent(html_5432dc61e6230af5848d31b336a4ad03);
+                var html_555a3d8a0c5c2190c4aeaa086d730003 = $(`<div id="html_555a3d8a0c5c2190c4aeaa086d730003" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD. RIZKIA TANI</h4>         <b>PIC:</b> Arjuna<br>         <b>Kecamatan:</b> Sakra Timur<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,500 Liters<br>         <b>Revenue Target:</b> Rp 275000000<br>         <b>Coverage Radius:</b> 16 km     </div>     </div>`)[0];
+                popup_261baebb2ea9096f3a77d5fc6d9e7b93.setContent(html_555a3d8a0c5c2190c4aeaa086d730003);
             
         
 
-        marker_0fffaba61d39b0a5258848b3bd9febfd.bindPopup(popup_f715186dac37badbbaf3d471019753ca)
+        marker_9be81fc3b7d159a7b6fb7618ea782f88.bindPopup(popup_261baebb2ea9096f3a77d5fc6d9e7b93)
         ;
 
         
     
     
-            marker_0fffaba61d39b0a5258848b3bd9febfd.bindTooltip(
+            marker_9be81fc3b7d159a7b6fb7618ea782f88.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -407,16 +432,16 @@
             );
         
     
-                marker_0fffaba61d39b0a5258848b3bd9febfd.setIcon(icon_98ee45c7ac312af0c681d4c31a567590);
+                marker_9be81fc3b7d159a7b6fb7618ea782f88.setIcon(icon_740baeca96d7c5f991a125853946ff64);
             
     
-            var circle_c1e5b96f887c9cda97d2bf681119c7f4 = L.circle(
+            var circle_55a4fd6fe1a7a9a98d7079cdfd77ee4f = L.circle(
                 [-8.764928, 116.364143],
-                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 1.5}
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+                {"bubblingMouseEvents": true, "color": "#FFA07A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFA07A", "fillOpacity": 0.18, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            circle_c1e5b96f887c9cda97d2bf681119c7f4.bindTooltip(
+            circle_55a4fd6fe1a7a9a98d7079cdfd77ee4f.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -433,16 +458,16 @@
             );
         
     
-            var marker_9250eb3a24525059e0e2aeb68875fbf5 = L.marker(
+            var marker_a61a80d9c7a42d8015eeecab8a8f82fa = L.marker(
                 [-8.764928, 116.364143],
                 {
 }
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            var icon_d3322e3b2762d4d76328566c8cd139ac = L.AwesomeMarkers.icon(
+            var icon_4e1ba03c459706559d6a72dc38dcc8ec = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "orange",
   "iconColor": "white",
   "icon": "shopping-cart",
   "prefix": "fa",
@@ -451,24 +476,24 @@
             );
         
     
-        var popup_1416e59d81394f13d3756edf2cc8b755 = L.popup({
+        var popup_791ea739d3206d3e6fccb53e01a645e9 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_7bec44d080f7520596d9872aa16a67e6 = $(`<div id="html_7bec44d080f7520596d9872aa16a67e6" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD. BAROKAH TANI</h4>         <b>PIC:</b> Arjuna<br>         <b>Kecamatan:</b> Praya Timur<br>         <b>Kabupaten:</b> Lombok Tengah<br>         <b>Sales Target:</b> 1,000 Liters<br>         <b>Revenue Target:</b> Rp 110000000<br>         <b>Coverage Radius:</b> 20 km     </div>     </div>`)[0];
-                popup_1416e59d81394f13d3756edf2cc8b755.setContent(html_7bec44d080f7520596d9872aa16a67e6);
+                var html_a96cf04741a311bf7c92fbcfd65f8ffa = $(`<div id="html_a96cf04741a311bf7c92fbcfd65f8ffa" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD. BAROKAH TANI</h4>         <b>PIC:</b> Arjuna<br>         <b>Kecamatan:</b> Praya Timur<br>         <b>Kabupaten:</b> Lombok Tengah<br>         <b>Sales Target:</b> 1,000 Liters<br>         <b>Revenue Target:</b> Rp 110000000<br>         <b>Coverage Radius:</b> 20 km     </div>     </div>`)[0];
+                popup_791ea739d3206d3e6fccb53e01a645e9.setContent(html_a96cf04741a311bf7c92fbcfd65f8ffa);
             
         
 
-        marker_9250eb3a24525059e0e2aeb68875fbf5.bindPopup(popup_1416e59d81394f13d3756edf2cc8b755)
+        marker_a61a80d9c7a42d8015eeecab8a8f82fa.bindPopup(popup_791ea739d3206d3e6fccb53e01a645e9)
         ;
 
         
     
     
-            marker_9250eb3a24525059e0e2aeb68875fbf5.bindTooltip(
+            marker_a61a80d9c7a42d8015eeecab8a8f82fa.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -485,16 +510,16 @@
             );
         
     
-                marker_9250eb3a24525059e0e2aeb68875fbf5.setIcon(icon_d3322e3b2762d4d76328566c8cd139ac);
+                marker_a61a80d9c7a42d8015eeecab8a8f82fa.setIcon(icon_4e1ba03c459706559d6a72dc38dcc8ec);
             
     
-            var circle_05f86fa6d2b5595cd286d7b4f6c99f28 = L.circle(
+            var circle_64a8c14d208d967ed99de5903fc4ed08 = L.circle(
                 [-8.743425, 116.399826],
-                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21000, "stroke": true, "weight": 1.5}
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+                {"bubblingMouseEvents": true, "color": "#FFA07A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFA07A", "fillOpacity": 0.18, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21000.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            circle_05f86fa6d2b5595cd286d7b4f6c99f28.bindTooltip(
+            circle_64a8c14d208d967ed99de5903fc4ed08.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -511,16 +536,16 @@
             );
         
     
-            var marker_837808636a462081c76ae0dad756901a = L.marker(
+            var marker_96acb191853297e8ad30ba7ba7a10865 = L.marker(
                 [-8.743425, 116.399826],
                 {
 }
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            var icon_da9d9bfc820d682e129e423e59ff04e3 = L.AwesomeMarkers.icon(
+            var icon_1969d820820899523dc8b0ba19ab61ad = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "orange",
   "iconColor": "white",
   "icon": "shopping-cart",
   "prefix": "fa",
@@ -529,24 +554,24 @@
             );
         
     
-        var popup_3c13f9b7e6ea37b28075be54333d76e0 = L.popup({
+        var popup_5a013296a4b7826d1d64f0ed4fdf8abd = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_1c440556a60f8ce22a202b3909654312 = $(`<div id="html_1c440556a60f8ce22a202b3909654312" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD. BINA TANI UTAMA</h4>         <b>PIC:</b> Arjuna<br>         <b>Kecamatan:</b> Praya Timur<br>         <b>Kabupaten:</b> Lombok Tengah<br>         <b>Sales Target:</b> 2,500 Liters<br>         <b>Revenue Target:</b> Rp 275000000<br>         <b>Coverage Radius:</b> 21 km     </div>     </div>`)[0];
-                popup_3c13f9b7e6ea37b28075be54333d76e0.setContent(html_1c440556a60f8ce22a202b3909654312);
+                var html_26b2ded936922913f289305b5934698d = $(`<div id="html_26b2ded936922913f289305b5934698d" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD. BINA TANI UTAMA</h4>         <b>PIC:</b> Arjuna<br>         <b>Kecamatan:</b> Praya Timur<br>         <b>Kabupaten:</b> Lombok Tengah<br>         <b>Sales Target:</b> 2,500 Liters<br>         <b>Revenue Target:</b> Rp 275000000<br>         <b>Coverage Radius:</b> 21 km     </div>     </div>`)[0];
+                popup_5a013296a4b7826d1d64f0ed4fdf8abd.setContent(html_26b2ded936922913f289305b5934698d);
             
         
 
-        marker_837808636a462081c76ae0dad756901a.bindPopup(popup_3c13f9b7e6ea37b28075be54333d76e0)
+        marker_96acb191853297e8ad30ba7ba7a10865.bindPopup(popup_5a013296a4b7826d1d64f0ed4fdf8abd)
         ;
 
         
     
     
-            marker_837808636a462081c76ae0dad756901a.bindTooltip(
+            marker_96acb191853297e8ad30ba7ba7a10865.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -563,16 +588,16 @@
             );
         
     
-                marker_837808636a462081c76ae0dad756901a.setIcon(icon_da9d9bfc820d682e129e423e59ff04e3);
+                marker_96acb191853297e8ad30ba7ba7a10865.setIcon(icon_1969d820820899523dc8b0ba19ab61ad);
             
     
-            var circle_9837243f0c0b039355765d60427a5698 = L.circle(
+            var circle_5613fd6f94c8fa64a3d4560ccca45739 = L.circle(
                 [-8.362045, 116.512912],
-                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21000, "stroke": true, "weight": 1.5}
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+                {"bubblingMouseEvents": true, "color": "#6495ED", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6495ED", "fillOpacity": 0.18, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21000.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            circle_9837243f0c0b039355765d60427a5698.bindTooltip(
+            circle_5613fd6f94c8fa64a3d4560ccca45739.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -589,14 +614,14 @@
             );
         
     
-            var marker_ec700a5f177b48f2da574780c256e901 = L.marker(
+            var marker_1942ad4b730e5dcfd9b590a85ad64fcc = L.marker(
                 [-8.362045, 116.512912],
                 {
 }
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            var icon_46f70fa718ca5230c5d55a52b3c406a6 = L.AwesomeMarkers.icon(
+            var icon_87d56207a630c275c10fa9d205919265 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -607,24 +632,24 @@
             );
         
     
-        var popup_823e96c62ec71eab346ed9488ade3367 = L.popup({
+        var popup_af592ca01576e8342f44dde2d20b8c61 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_1d6f1e82de8cb2af66108b96a184561e = $(`<div id="html_1d6f1e82de8cb2af66108b96a184561e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">Dirga Agro</h4>         <b>PIC:</b> Fikri<br>         <b>Kecamatan:</b> Sembalun<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 4,500 Liters<br>         <b>Revenue Target:</b> Rp 495000000<br>         <b>Coverage Radius:</b> 21 km     </div>     </div>`)[0];
-                popup_823e96c62ec71eab346ed9488ade3367.setContent(html_1d6f1e82de8cb2af66108b96a184561e);
+                var html_e1f09e357f9b4dd9badc33bbf1a21bd3 = $(`<div id="html_e1f09e357f9b4dd9badc33bbf1a21bd3" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">Dirga Agro</h4>         <b>PIC:</b> Fikri<br>         <b>Kecamatan:</b> Sembalun<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 4,500 Liters<br>         <b>Revenue Target:</b> Rp 495000000<br>         <b>Coverage Radius:</b> 21 km     </div>     </div>`)[0];
+                popup_af592ca01576e8342f44dde2d20b8c61.setContent(html_e1f09e357f9b4dd9badc33bbf1a21bd3);
             
         
 
-        marker_ec700a5f177b48f2da574780c256e901.bindPopup(popup_823e96c62ec71eab346ed9488ade3367)
+        marker_1942ad4b730e5dcfd9b590a85ad64fcc.bindPopup(popup_af592ca01576e8342f44dde2d20b8c61)
         ;
 
         
     
     
-            marker_ec700a5f177b48f2da574780c256e901.bindTooltip(
+            marker_1942ad4b730e5dcfd9b590a85ad64fcc.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -641,16 +666,16 @@
             );
         
     
-                marker_ec700a5f177b48f2da574780c256e901.setIcon(icon_46f70fa718ca5230c5d55a52b3c406a6);
+                marker_1942ad4b730e5dcfd9b590a85ad64fcc.setIcon(icon_87d56207a630c275c10fa9d205919265);
             
     
-            var circle_0445d48f80ba5dc9d4bd4b5c065f88c0 = L.circle(
+            var circle_2e5358a52ededf315a91610d43b32e75 = L.circle(
                 [-8.795752, 116.29119],
-                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11000, "stroke": true, "weight": 1.5}
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+                {"bubblingMouseEvents": true, "color": "#BA55D3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BA55D3", "fillOpacity": 0.18, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11000.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            circle_0445d48f80ba5dc9d4bd4b5c065f88c0.bindTooltip(
+            circle_2e5358a52ededf315a91610d43b32e75.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -667,16 +692,16 @@
             );
         
     
-            var marker_06ccf02357d18d36df63625246dc40c1 = L.marker(
+            var marker_c5079b75fe511e90bf6554b28bdc9480 = L.marker(
                 [-8.795752, 116.29119],
                 {
 }
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            var icon_9d85b493ba9064d35ce8644370343ea8 = L.AwesomeMarkers.icon(
+            var icon_9607503028cdae536d8c3957f34c5c4a = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "purple",
   "iconColor": "white",
   "icon": "shopping-cart",
   "prefix": "fa",
@@ -685,24 +710,24 @@
             );
         
     
-        var popup_428e8e502b8605a7d8e8af26206c12f4 = L.popup({
+        var popup_23d3012483f3f6520500f0ddf37320b9 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_3cf36dff00ae6146fab1f2b7c1a9badb = $(`<div id="html_3cf36dff00ae6146fab1f2b7c1a9badb" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Bagus Rizki</h4>         <b>PIC:</b> Umam<br>         <b>Kecamatan:</b> Pujut<br>         <b>Kabupaten:</b> Lombok Tengah<br>         <b>Sales Target:</b> 2,000 Liters<br>         <b>Revenue Target:</b> Rp 220000000<br>         <b>Coverage Radius:</b> 11 km     </div>     </div>`)[0];
-                popup_428e8e502b8605a7d8e8af26206c12f4.setContent(html_3cf36dff00ae6146fab1f2b7c1a9badb);
+                var html_a89c0f776a73cb835209abdffd9bb6cf = $(`<div id="html_a89c0f776a73cb835209abdffd9bb6cf" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Bagus Rizki</h4>         <b>PIC:</b> Umam<br>         <b>Kecamatan:</b> Pujut<br>         <b>Kabupaten:</b> Lombok Tengah<br>         <b>Sales Target:</b> 2,000 Liters<br>         <b>Revenue Target:</b> Rp 220000000<br>         <b>Coverage Radius:</b> 11 km     </div>     </div>`)[0];
+                popup_23d3012483f3f6520500f0ddf37320b9.setContent(html_a89c0f776a73cb835209abdffd9bb6cf);
             
         
 
-        marker_06ccf02357d18d36df63625246dc40c1.bindPopup(popup_428e8e502b8605a7d8e8af26206c12f4)
+        marker_c5079b75fe511e90bf6554b28bdc9480.bindPopup(popup_23d3012483f3f6520500f0ddf37320b9)
         ;
 
         
     
     
-            marker_06ccf02357d18d36df63625246dc40c1.bindTooltip(
+            marker_c5079b75fe511e90bf6554b28bdc9480.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -719,16 +744,16 @@
             );
         
     
-                marker_06ccf02357d18d36df63625246dc40c1.setIcon(icon_9d85b493ba9064d35ce8644370343ea8);
+                marker_c5079b75fe511e90bf6554b28bdc9480.setIcon(icon_9607503028cdae536d8c3957f34c5c4a);
             
     
-            var circle_87c0830b50013156b260b49940895670 = L.circle(
+            var circle_642c0ec69a682844ab01b17d821d11e5 = L.circle(
                 [-8.386196, 116.698815],
-                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19000, "stroke": true, "weight": 1.5}
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+                {"bubblingMouseEvents": true, "color": "#BA55D3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BA55D3", "fillOpacity": 0.18, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19000.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            circle_87c0830b50013156b260b49940895670.bindTooltip(
+            circle_642c0ec69a682844ab01b17d821d11e5.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -745,16 +770,16 @@
             );
         
     
-            var marker_52b01a10afd707a199aa6af7da02bf5e = L.marker(
+            var marker_76b2fdc939dd1bedb4c0951b9f618db4 = L.marker(
                 [-8.386196, 116.698815],
                 {
 }
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            var icon_bff6de910124623bc1ba10c8a9b289be = L.AwesomeMarkers.icon(
+            var icon_7478955f36704d23e114a604a6c280b7 = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "purple",
   "iconColor": "white",
   "icon": "shopping-cart",
   "prefix": "fa",
@@ -763,24 +788,24 @@
             );
         
     
-        var popup_c121b45bf8c21330bcb9ff4391f4f044 = L.popup({
+        var popup_589af5b97838fdea3dc9ca02500b559e = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_68e1ee7eb6ae073cf8fd792486a4719b = $(`<div id="html_68e1ee7eb6ae073cf8fd792486a4719b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Bale Tani</h4>         <b>PIC:</b> Umam<br>         <b>Kecamatan:</b> Sembelia<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,500 Liters<br>         <b>Revenue Target:</b> Rp 275000000<br>         <b>Coverage Radius:</b> 19 km     </div>     </div>`)[0];
-                popup_c121b45bf8c21330bcb9ff4391f4f044.setContent(html_68e1ee7eb6ae073cf8fd792486a4719b);
+                var html_80b31cd61887264718613a7714af095b = $(`<div id="html_80b31cd61887264718613a7714af095b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Bale Tani</h4>         <b>PIC:</b> Umam<br>         <b>Kecamatan:</b> Sembelia<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,500 Liters<br>         <b>Revenue Target:</b> Rp 275000000<br>         <b>Coverage Radius:</b> 19 km     </div>     </div>`)[0];
+                popup_589af5b97838fdea3dc9ca02500b559e.setContent(html_80b31cd61887264718613a7714af095b);
             
         
 
-        marker_52b01a10afd707a199aa6af7da02bf5e.bindPopup(popup_c121b45bf8c21330bcb9ff4391f4f044)
+        marker_76b2fdc939dd1bedb4c0951b9f618db4.bindPopup(popup_589af5b97838fdea3dc9ca02500b559e)
         ;
 
         
     
     
-            marker_52b01a10afd707a199aa6af7da02bf5e.bindTooltip(
+            marker_76b2fdc939dd1bedb4c0951b9f618db4.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -797,16 +822,16 @@
             );
         
     
-                marker_52b01a10afd707a199aa6af7da02bf5e.setIcon(icon_bff6de910124623bc1ba10c8a9b289be);
+                marker_76b2fdc939dd1bedb4c0951b9f618db4.setIcon(icon_7478955f36704d23e114a604a6c280b7);
             
     
-            var circle_233ca05e6a62931b92de69ec98fed790 = L.circle(
+            var circle_385dd33b3b513c2162e3878498922967 = L.circle(
                 [-8.614809, 116.598076],
-                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14000, "stroke": true, "weight": 1.5}
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+                {"bubblingMouseEvents": true, "color": "#6495ED", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6495ED", "fillOpacity": 0.18, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14000.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            circle_233ca05e6a62931b92de69ec98fed790.bindTooltip(
+            circle_385dd33b3b513c2162e3878498922967.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -823,14 +848,14 @@
             );
         
     
-            var marker_d3c322f985fd815aa0c1e3cd436da2e5 = L.marker(
+            var marker_1e6197a9d88c7b19af8e259a67461459 = L.marker(
                 [-8.614809, 116.598076],
                 {
 }
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            var icon_5b7839b1ef646553de70186d1ab3743c = L.AwesomeMarkers.icon(
+            var icon_16adbf84345b3802fe1ab15b93fa0f6b = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -841,24 +866,24 @@
             );
         
     
-        var popup_6e0c83eb76b1adb013c0bbebcb4d795f = L.popup({
+        var popup_c262aa73e3669f9968706103243bb97c = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_7c3446cc896570586699c131d23d6e4c = $(`<div id="html_7c3446cc896570586699c131d23d6e4c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Taninte</h4>         <b>PIC:</b> Fikri<br>         <b>Kecamatan:</b> Labuhan Haji<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,000 Liters<br>         <b>Revenue Target:</b> Rp 220000000<br>         <b>Coverage Radius:</b> 14 km     </div>     </div>`)[0];
-                popup_6e0c83eb76b1adb013c0bbebcb4d795f.setContent(html_7c3446cc896570586699c131d23d6e4c);
+                var html_58af112a5ab46814a99161ccd27fa118 = $(`<div id="html_58af112a5ab46814a99161ccd27fa118" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Taninte</h4>         <b>PIC:</b> Fikri<br>         <b>Kecamatan:</b> Labuhan Haji<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,000 Liters<br>         <b>Revenue Target:</b> Rp 220000000<br>         <b>Coverage Radius:</b> 14 km     </div>     </div>`)[0];
+                popup_c262aa73e3669f9968706103243bb97c.setContent(html_58af112a5ab46814a99161ccd27fa118);
             
         
 
-        marker_d3c322f985fd815aa0c1e3cd436da2e5.bindPopup(popup_6e0c83eb76b1adb013c0bbebcb4d795f)
+        marker_1e6197a9d88c7b19af8e259a67461459.bindPopup(popup_c262aa73e3669f9968706103243bb97c)
         ;
 
         
     
     
-            marker_d3c322f985fd815aa0c1e3cd436da2e5.bindTooltip(
+            marker_1e6197a9d88c7b19af8e259a67461459.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -875,16 +900,16 @@
             );
         
     
-                marker_d3c322f985fd815aa0c1e3cd436da2e5.setIcon(icon_5b7839b1ef646553de70186d1ab3743c);
+                marker_1e6197a9d88c7b19af8e259a67461459.setIcon(icon_16adbf84345b3802fe1ab15b93fa0f6b);
             
     
-            var circle_66c7ea394336a3f507009a853ad7afcb = L.circle(
+            var circle_2643a1357cfa238aa9ff1fdd46bc34ab = L.circle(
                 [-8.557584, 116.631546],
-                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13000, "stroke": true, "weight": 1.5}
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+                {"bubblingMouseEvents": true, "color": "#6495ED", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6495ED", "fillOpacity": 0.18, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13000.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            circle_66c7ea394336a3f507009a853ad7afcb.bindTooltip(
+            circle_2643a1357cfa238aa9ff1fdd46bc34ab.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -901,14 +926,14 @@
             );
         
     
-            var marker_e6b4a854b177ea48daaf7e632dc6cfd6 = L.marker(
+            var marker_6c2ab6f1abd9682fdd930d8aba5c438f = L.marker(
                 [-8.557584, 116.631546],
                 {
 }
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            var icon_f3003e9a7cfcbb53446186a5a255f742 = L.AwesomeMarkers.icon(
+            var icon_833a67e034077e7fa2f01a5b8e918d85 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -919,24 +944,24 @@
             );
         
     
-        var popup_d8ec5e271794a4c919297496aba68811 = L.popup({
+        var popup_e77ce46dd983292eeee110eef21c752a = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_3b99d6748a53fed8e6dea62559fee801 = $(`<div id="html_3b99d6748a53fed8e6dea62559fee801" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Maju Jaya</h4>         <b>PIC:</b> Fikri<br>         <b>Kecamatan:</b> Pringgabaya<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,000 Liters<br>         <b>Revenue Target:</b> Rp 220000000<br>         <b>Coverage Radius:</b> 13 km     </div>     </div>`)[0];
-                popup_d8ec5e271794a4c919297496aba68811.setContent(html_3b99d6748a53fed8e6dea62559fee801);
+                var html_c47c1b3a1552fa61709abd008fac2a12 = $(`<div id="html_c47c1b3a1552fa61709abd008fac2a12" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Maju Jaya</h4>         <b>PIC:</b> Fikri<br>         <b>Kecamatan:</b> Pringgabaya<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,000 Liters<br>         <b>Revenue Target:</b> Rp 220000000<br>         <b>Coverage Radius:</b> 13 km     </div>     </div>`)[0];
+                popup_e77ce46dd983292eeee110eef21c752a.setContent(html_c47c1b3a1552fa61709abd008fac2a12);
             
         
 
-        marker_e6b4a854b177ea48daaf7e632dc6cfd6.bindPopup(popup_d8ec5e271794a4c919297496aba68811)
+        marker_6c2ab6f1abd9682fdd930d8aba5c438f.bindPopup(popup_e77ce46dd983292eeee110eef21c752a)
         ;
 
         
     
     
-            marker_e6b4a854b177ea48daaf7e632dc6cfd6.bindTooltip(
+            marker_6c2ab6f1abd9682fdd930d8aba5c438f.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -953,16 +978,16 @@
             );
         
     
-                marker_e6b4a854b177ea48daaf7e632dc6cfd6.setIcon(icon_f3003e9a7cfcbb53446186a5a255f742);
+                marker_6c2ab6f1abd9682fdd930d8aba5c438f.setIcon(icon_833a67e034077e7fa2f01a5b8e918d85);
             
     
-            var circle_0fa5a82a6c4a492c36f7de30d3efe819 = L.circle(
+            var circle_f158f4aa4a5d520208dc8a3965ae67d0 = L.circle(
                 [-8.778427, 116.309967],
-                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21000, "stroke": true, "weight": 1.5}
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+                {"bubblingMouseEvents": true, "color": "#BA55D3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BA55D3", "fillOpacity": 0.18, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21000.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            circle_0fa5a82a6c4a492c36f7de30d3efe819.bindTooltip(
+            circle_f158f4aa4a5d520208dc8a3965ae67d0.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -979,16 +1004,16 @@
             );
         
     
-            var marker_082cbc8dd3a3320166843ffb2777445f = L.marker(
+            var marker_fab55251f4a3c85398dca37a57b642d5 = L.marker(
                 [-8.778427, 116.309967],
                 {
 }
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            var icon_e3474bd6eb73ddd645ad72b1b0a85648 = L.AwesomeMarkers.icon(
+            var icon_647a7f859850e22c3020e12c28aa9285 = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "purple",
   "iconColor": "white",
   "icon": "shopping-cart",
   "prefix": "fa",
@@ -997,24 +1022,24 @@
             );
         
     
-        var popup_46b709c17089eb2a2ec8e733ab00ee21 = L.popup({
+        var popup_7e62a0e38746a1ee573dddbc3eb94b08 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_84d23e1880bbd4c302440ece413773fb = $(`<div id="html_84d23e1880bbd4c302440ece413773fb" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Riski Tani</h4>         <b>PIC:</b> Umam<br>         <b>Kecamatan:</b> Pujut<br>         <b>Kabupaten:</b> Lombok Tengah<br>         <b>Sales Target:</b> 1,500 Liters<br>         <b>Revenue Target:</b> Rp 165000000<br>         <b>Coverage Radius:</b> 21 km     </div>     </div>`)[0];
-                popup_46b709c17089eb2a2ec8e733ab00ee21.setContent(html_84d23e1880bbd4c302440ece413773fb);
+                var html_82afeac3024782865d22e9f1f3567c58 = $(`<div id="html_82afeac3024782865d22e9f1f3567c58" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Riski Tani</h4>         <b>PIC:</b> Umam<br>         <b>Kecamatan:</b> Pujut<br>         <b>Kabupaten:</b> Lombok Tengah<br>         <b>Sales Target:</b> 1,500 Liters<br>         <b>Revenue Target:</b> Rp 165000000<br>         <b>Coverage Radius:</b> 21 km     </div>     </div>`)[0];
+                popup_7e62a0e38746a1ee573dddbc3eb94b08.setContent(html_82afeac3024782865d22e9f1f3567c58);
             
         
 
-        marker_082cbc8dd3a3320166843ffb2777445f.bindPopup(popup_46b709c17089eb2a2ec8e733ab00ee21)
+        marker_fab55251f4a3c85398dca37a57b642d5.bindPopup(popup_7e62a0e38746a1ee573dddbc3eb94b08)
         ;
 
         
     
     
-            marker_082cbc8dd3a3320166843ffb2777445f.bindTooltip(
+            marker_fab55251f4a3c85398dca37a57b642d5.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -1031,16 +1056,16 @@
             );
         
     
-                marker_082cbc8dd3a3320166843ffb2777445f.setIcon(icon_e3474bd6eb73ddd645ad72b1b0a85648);
+                marker_fab55251f4a3c85398dca37a57b642d5.setIcon(icon_647a7f859850e22c3020e12c28aa9285);
             
     
-            var circle_58027606d69d380fe962e7bddab23187 = L.circle(
+            var circle_421d9908d595e1d80746ca225b330749 = L.circle(
                 [-8.603066, 116.51783],
-                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23000, "stroke": true, "weight": 1.5}
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+                {"bubblingMouseEvents": true, "color": "#6495ED", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6495ED", "fillOpacity": 0.18, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23000.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            circle_58027606d69d380fe962e7bddab23187.bindTooltip(
+            circle_421d9908d595e1d80746ca225b330749.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -1057,14 +1082,14 @@
             );
         
     
-            var marker_ef6df8e354e3aebe48f20b2b3eb04bab = L.marker(
+            var marker_c26fa59af07912ce087e419bf9107c3a = L.marker(
                 [-8.603066, 116.51783],
                 {
 }
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            var icon_d091145ac2db0f251b5547607e88d22e = L.AwesomeMarkers.icon(
+            var icon_30fcc82816fb187044023236afd738fa = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -1075,24 +1100,24 @@
             );
         
     
-        var popup_209f2fc483a1f0066acd845a7209c42d = L.popup({
+        var popup_d2ead5cf132e165e4b063303d90e8dff = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_7fbf0e19166983214950c0d91b694b9e = $(`<div id="html_7fbf0e19166983214950c0d91b694b9e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Algiva Yani</h4>         <b>PIC:</b> Fikri<br>         <b>Kecamatan:</b> Suralaga<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,000 Liters<br>         <b>Revenue Target:</b> Rp 220000000<br>         <b>Coverage Radius:</b> 23 km     </div>     </div>`)[0];
-                popup_209f2fc483a1f0066acd845a7209c42d.setContent(html_7fbf0e19166983214950c0d91b694b9e);
+                var html_54f74e40ba35d3cf279c4a7d007d690b = $(`<div id="html_54f74e40ba35d3cf279c4a7d007d690b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Algiva Yani</h4>         <b>PIC:</b> Fikri<br>         <b>Kecamatan:</b> Suralaga<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 2,000 Liters<br>         <b>Revenue Target:</b> Rp 220000000<br>         <b>Coverage Radius:</b> 23 km     </div>     </div>`)[0];
+                popup_d2ead5cf132e165e4b063303d90e8dff.setContent(html_54f74e40ba35d3cf279c4a7d007d690b);
             
         
 
-        marker_ef6df8e354e3aebe48f20b2b3eb04bab.bindPopup(popup_209f2fc483a1f0066acd845a7209c42d)
+        marker_c26fa59af07912ce087e419bf9107c3a.bindPopup(popup_d2ead5cf132e165e4b063303d90e8dff)
         ;
 
         
     
     
-            marker_ef6df8e354e3aebe48f20b2b3eb04bab.bindTooltip(
+            marker_c26fa59af07912ce087e419bf9107c3a.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -1109,16 +1134,16 @@
             );
         
     
-                marker_ef6df8e354e3aebe48f20b2b3eb04bab.setIcon(icon_d091145ac2db0f251b5547607e88d22e);
+                marker_c26fa59af07912ce087e419bf9107c3a.setIcon(icon_30fcc82816fb187044023236afd738fa);
             
     
-            var circle_b6c2c71bdaa8d73ca9e1184abea352cc = L.circle(
+            var circle_23e9b5bc1e5b42c96d8e6aa588325be4 = L.circle(
                 [-8.56852, 116.531115],
-                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15000, "stroke": true, "weight": 1.5}
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+                {"bubblingMouseEvents": true, "color": "#6495ED", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6495ED", "fillOpacity": 0.18, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15000.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            circle_b6c2c71bdaa8d73ca9e1184abea352cc.bindTooltip(
+            circle_23e9b5bc1e5b42c96d8e6aa588325be4.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -1135,14 +1160,14 @@
             );
         
     
-            var marker_4f1b70a3a3d24e342e89c1e8dcf54b37 = L.marker(
+            var marker_d35b93f79009255e7409d79fc30de76e = L.marker(
                 [-8.56852, 116.531115],
                 {
 }
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            var icon_99b849f1e9e935a29ed089c444abdf23 = L.AwesomeMarkers.icon(
+            var icon_762986f2029ad6dd0362015cc7b55dc6 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -1153,24 +1178,24 @@
             );
         
     
-        var popup_af37b898724695df0d3c895b29f9719d = L.popup({
+        var popup_36a01559087f669cb566b3170a7491ee = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_ba74868fdc95557423f882a3d0896142 = $(`<div id="html_ba74868fdc95557423f882a3d0896142" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">Sarana Tani</h4>         <b>PIC:</b> Fikri<br>         <b>Kecamatan:</b> Aikmel<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 1,500 Liters<br>         <b>Revenue Target:</b> Rp 165000000<br>         <b>Coverage Radius:</b> 15 km     </div>     </div>`)[0];
-                popup_af37b898724695df0d3c895b29f9719d.setContent(html_ba74868fdc95557423f882a3d0896142);
+                var html_1aa456fcc251569cda0ef018565ae81f = $(`<div id="html_1aa456fcc251569cda0ef018565ae81f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">Sarana Tani</h4>         <b>PIC:</b> Fikri<br>         <b>Kecamatan:</b> Aikmel<br>         <b>Kabupaten:</b> Lombok Timur<br>         <b>Sales Target:</b> 1,500 Liters<br>         <b>Revenue Target:</b> Rp 165000000<br>         <b>Coverage Radius:</b> 15 km     </div>     </div>`)[0];
+                popup_36a01559087f669cb566b3170a7491ee.setContent(html_1aa456fcc251569cda0ef018565ae81f);
             
         
 
-        marker_4f1b70a3a3d24e342e89c1e8dcf54b37.bindPopup(popup_af37b898724695df0d3c895b29f9719d)
+        marker_d35b93f79009255e7409d79fc30de76e.bindPopup(popup_36a01559087f669cb566b3170a7491ee)
         ;
 
         
     
     
-            marker_4f1b70a3a3d24e342e89c1e8dcf54b37.bindTooltip(
+            marker_d35b93f79009255e7409d79fc30de76e.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -1187,16 +1212,16 @@
             );
         
     
-                marker_4f1b70a3a3d24e342e89c1e8dcf54b37.setIcon(icon_99b849f1e9e935a29ed089c444abdf23);
+                marker_d35b93f79009255e7409d79fc30de76e.setIcon(icon_762986f2029ad6dd0362015cc7b55dc6);
             
     
-            var circle_85174a3e2cdd140a2fad37cfabc25e09 = L.circle(
+            var circle_b5490c17f391e220bd552d5480d756d5 = L.circle(
                 [-8.640409, 116.105889],
-                {"bubblingMouseEvents": true, "color": "#2B6CB0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182CE", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16000, "stroke": true, "weight": 1.5}
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+                {"bubblingMouseEvents": true, "color": "#6495ED", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6495ED", "fillOpacity": 0.18, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16000.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            circle_85174a3e2cdd140a2fad37cfabc25e09.bindTooltip(
+            circle_b5490c17f391e220bd552d5480d756d5.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -1213,14 +1238,14 @@
             );
         
     
-            var marker_e30119f020455018f94ecfea0401ba78 = L.marker(
+            var marker_756d5671758b8eb184b317e3a5556c73 = L.marker(
                 [-8.640409, 116.105889],
                 {
 }
-            ).addTo(map_5ae506d03fbfdc406ba8f8c1eebc8124);
+            ).addTo(map_4d0e2fed5a7ad7c3b4518877d3ec0c7c);
         
     
-            var icon_c7da73cd906d92d456ff23cdda4af6f7 = L.AwesomeMarkers.icon(
+            var icon_1242a2fe697f4e7c34d6b2860bc7ac8f = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -1231,24 +1256,24 @@
             );
         
     
-        var popup_74893678388273cba7cdffd97317947b = L.popup({
+        var popup_659337a8a6031f284d5b2d7e694478fe = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_339df8bf5f843c8cc9070f68f4276cd3 = $(`<div id="html_339df8bf5f843c8cc9070f68f4276cd3" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Berkah Insani</h4>         <b>PIC:</b> Fikri<br>         <b>Kecamatan:</b> Labuapi<br>         <b>Kabupaten:</b> Lombok Barat<br>         <b>Sales Target:</b> 1,000 Liters<br>         <b>Revenue Target:</b> Rp 110000000<br>         <b>Coverage Radius:</b> 16 km     </div>     </div>`)[0];
-                popup_74893678388273cba7cdffd97317947b.setContent(html_339df8bf5f843c8cc9070f68f4276cd3);
+                var html_cad18e673b90ad12e53bcea927b2aecd = $(`<div id="html_cad18e673b90ad12e53bcea927b2aecd" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size: 13px; width: 200px;">         <h4 style="margin: 0 0 5px 0;">UD Berkah Insani</h4>         <b>PIC:</b> Fikri<br>         <b>Kecamatan:</b> Labuapi<br>         <b>Kabupaten:</b> Lombok Barat<br>         <b>Sales Target:</b> 1,000 Liters<br>         <b>Revenue Target:</b> Rp 110000000<br>         <b>Coverage Radius:</b> 16 km     </div>     </div>`)[0];
+                popup_659337a8a6031f284d5b2d7e694478fe.setContent(html_cad18e673b90ad12e53bcea927b2aecd);
             
         
 
-        marker_e30119f020455018f94ecfea0401ba78.bindPopup(popup_74893678388273cba7cdffd97317947b)
+        marker_756d5671758b8eb184b317e3a5556c73.bindPopup(popup_659337a8a6031f284d5b2d7e694478fe)
         ;
 
         
     
     
-            marker_e30119f020455018f94ecfea0401ba78.bindTooltip(
+            marker_756d5671758b8eb184b317e3a5556c73.bindTooltip(
                 `<div>
                      
     <div style="font-family: Arial; font-size: 12px; line-height: 1.4;">
@@ -1265,7 +1290,7 @@
             );
         
     
-                marker_e30119f020455018f94ecfea0401ba78.setIcon(icon_c7da73cd906d92d456ff23cdda4af6f7);
+                marker_756d5671758b8eb184b317e3a5556c73.setIcon(icon_1242a2fe697f4e7c34d6b2860bc7ac8f);
             
 </script>
 </html>
